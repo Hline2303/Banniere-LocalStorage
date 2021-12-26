@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-size: 1.4rem; /* soit 14px */
+  font-family: Arial;
+  color: white;
+}
+
+.container {
+  height: 100vh; /* rempli la zone d'affichage selon l'appareil (mmoile, tablet, dsk */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+h1 {
+  font-size: 16rem;
+}
+
+.cookies {
+  position: fixed; /* Placée au-dessus des autres éléments */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Nécessaire de préciser une width si position: fixed; */
+  background-color: grey;
+  display: flex; /* Alignement des éléments enfants */
+  justify-content: space-between; /* Positionnement des div enfants */
+  align-items: center; /* centrer verticalement */
+  padding: 3rem;
+  opacity: 1; /* Modification de cette valeur en JS, pour faire disparaître la bannière*/
+  transition: 0.5s;
+}
+
+.cookies-btn {
+  display: flex;
+}
+
+.btn {
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-success {
+  background-color: #1e2337;
+}
+
+.btn-deny {
+  background-color: grey;
+}

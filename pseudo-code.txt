@@ -1,0 +1,2 @@
+Au clic (event) sur le bouton Accepter (élément),
+la div cookies (élément) devient invisible (action).
